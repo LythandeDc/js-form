@@ -1,30 +1,33 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8">
-    <title>Mon formulaire jQuery</title>
-	<link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Builder</title>
+    <link rel="stylesheet" href="style.css">
   </head>
-	
+
   <body>
-	  
-    <div id="gauche">
+    <div class="container">
+      <div id="gauche">
+        <h2>Apercu du formulaire</h2>
+        <div id="form-preview"></div>
+      </div>
+
+      <div id="droite">
+        <h3>Outils</h3>
+        <p>Utilisez ces boutons pour creer votre formulaire</p>
+        <div class="btn-group">
+          <button id="leLabel" class="btnprincipal">Label</button>
+          <button id="zTexte" class="btnprincipal">Zone de texte</button>
+          <button id="leBouton" class="btnprincipal">Bouton</button>
+          <button id="cForm" class="btnprincipal">Code Formulaire</button>
+        </div>
+        <hr>
+        <div id="panel"></div>
+      </div>
     </div>
-	  
-    <div id="droite">
-      <strong>Utilisez ces boutons pour créer votre formulaire</strong><br><br>
-      <button id="leLabel" class="btnprincipal">Label</button>
-      <button id="zTexte" class="btnprincipal">Zone de texte</button>
-      <button id="leBouton" class="btnprincipal">Bouton</button>
-	  <button id="cForm" class="btnprincipal">Code Formulaire</button>
-      <hr>
-    </div>
-	  
-	  
-   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>	  
-	<!-- Mon script pour le formulaire -->
-   <script src="script.js"></script>
-	  
+
+    <script src="script.js"></script>
   </body>
 </html>
